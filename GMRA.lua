@@ -10012,7 +10012,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/GMRA'}, 
+{text = '- قناة السورس', url = 't.me/V_vlv_V'}, 
 },
 }
 }
@@ -10025,7 +10025,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/GMRA'}, 
+{text = '- قناة السورس', url = 't.me/V_vlv_V'}, 
 },
 }
 }
