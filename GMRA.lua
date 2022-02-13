@@ -2268,7 +2268,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 --os.execute('rm -rf GMRA.lua')
---download('https://raw.githubusercontent.com/SourceTheGMRA/TheGMRA/master/GMRA.lua','GMRA.lua')
+--download('https://github.com/GMRA1/AOF/master/GMRA.lua','GMRA.lua')
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙تم تحديث السورس * ',"md",true)  
 end
 if text == 'جلب النسخه الاحتياطيه ⌔' or text == 'جلب نسخه احتياطيه' then
@@ -9201,20 +9201,20 @@ end
 Redis:del(TheGMRA.."GMRA:Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"⌔︙تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(TheGMRA.."GMRA:Name:Bot") or "سنايبر") then
-local NamesBot = (Redis:get(TheGMRA.."GMRA:Name:Bot") or "سنايبر")
+if text == (Redis:get(TheGMRA.."GMRA:Name:Bot") or "جمره") then
+local NamesBot = (Redis:get(TheGMRA.."GMRA:Name:Bot") or "جمره")
 local NameBots = {
 "عمر "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
-"لتــلح دا احجي ويه بنات سنايبر بعدين اجاوبك",
+"لتــلح دا احجي ويه بنات جمره بعدين اجاوبك",
 "راح نموت بكورونا ونته بعدك تصيح "..NamesBot,
 'يمعود والله نعسان'
 }
 return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(TheGMRA.."GMRA:Name:Bot") or "سنايبر")
+local NamesBot = (Redis:get(TheGMRA.."GMRA:Name:Bot") or "جمره")
 local BotName = {
 "باوع لك خليني احبك وصيحلي باسمي "..NamesBot,
 "لتخليني ارجع لحركاتي لقديمه وردا ترا اسمي "..NamesBot.. "",
@@ -9831,7 +9831,7 @@ name = string.gsub(name,"🧖‍♂️","🧖‍♀️🧖‍♀️🧖‍♀️
 name = string.gsub(name,"👬","👭👭👭👭👭👬👭👭👭")
 name = string.gsub(name,"👨‍👨‍👧","👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦")
 name = string.gsub(name,"🕒","🕒🕒🕒🕒🕒🕒🕓🕒🕒🕒")
-name = string.gsub(name,"🕤","🕥🕥🕥🕥🕥🕤🕥🕥🕥")
+name = string.gsub(name,"🕤","🕥🕥🕥??🕥🕤🕥🕥🕥")
 name = string.gsub(name,"⌛️","⏳⏳⏳⏳⏳⏳⌛️⏳⏳")
 name = string.gsub(name,"📅","📆📆📆📆📆📆📅📆📆")
 return LuaTele.sendText(msg_chat_id,msg_id,"⌔︙اسرع واحد يدز الاختلاف ~ {"..name.."}","md",true)  
@@ -9998,7 +9998,7 @@ if text == '/start' then
 Redis:sadd(TheGMRA..'GMRA:Num:User:Pv',msg.sender.user_id)  
 if not msg.ControllerBot then
 if not Redis:get(TheGMRA.."GMRA:Start:Bot") then
-local CmdStart = '*\n⌔︙أهلآ بك في بوت '..(Redis:get(TheGMRA.."GMRA:Name:Bot") or "سنايبر")..
+local CmdStart = '*\n⌔︙أهلآ بك في بوت '..(Redis:get(TheGMRA.."GMRA:Name:Bot") or "جمره")..
 '\n⌔︙اختصاص البوت حماية المجموعات'..
 '\n⌔︙لتفعيل البوت عليك اتباع مايلي ...'..
 '\n⌔︙اضف البوت الى مجموعتك'..
